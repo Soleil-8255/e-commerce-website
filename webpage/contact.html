@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WackyMart</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="logo" href="icons/W.png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="icons/w.png" alt="WackyMart Logo" class="logoleft">
+        <div class="nav-container"> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product_listing.html">Shop</a></li>
+                <li><a href="payment.html">Checkout</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <img src="icons/find.jpeg" alt="search-interface-symbol icon" class="search-bar">
+        <img src="icons/profile.jpeg" alt="log-in icon" class="search-bar-log">
+    </nav>
+
+    <header>
+        <h1><span class="brand-name">WackyMart</span>Contact Us</h1>
+    </header>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        
+        <!-- Contact Information Section -->
+        <div class="contact-method">
+            <h3>Phone</h3>
+            <p>Call us at: <strong>+60 12 3456789</strong></p>
+        </div>
+
+        <div class="contact-method">
+            <h3>Email</h3>
+            <p>Send an email to: <strong>support@wackymart.com</strong></p>
+        </div>
+
+        <div class="contact-method">
+            <h3>Address</h3>
+            <p>Visit us at: <strong>123 WackyMart St, Kuala Lumpur, Malaysia</strong></p>
+        </div>
+
+        <div class="contact-method">
+            <h3>Live Chat</h3>
+            <p>Chat with us anytime through our app for quick support.</p>
+        </div>
+
+        <div class="additional-info">
+            <h3 style="font-size: 24px;"">Additional Information</h3>
+            <p style="font-size: 20px;margin-top: -10px">If you have any inquiries or issues, please feel free to reach out to us using the contact form below. We aim to respond as quickly as possible!</p>
+        </div>
+
+            <form action="#" method="POST" id="inquiry-form" class="inquiry-form">
+                <h3>Inquiry Form</h3>
+            
+                <!-- Name Field -->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            
+                <!-- Email Field -->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            
+                <!-- Inquiry Type Field -->
+                <label for="inquiry-type">Type of Inquiry</label>
+                <select id="inquiry-type" name="inquiry-type" required>
+                    <option value="general">General Inquiry</option>
+                    <option value="order">Order Status</option>
+                    <option value="shipping">Shipping Information</option>
+                    <option value="returns">Returns & Exchanges</option>
+                    <option value="payment">Payment Issues</option>
+                </select>
+            
+                <!-- Message Field -->
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Write your message here" rows="4"></textarea>
+            
+                <!-- Submit Button -->
+                <button type="submit">Submit Inquiry</button>
+            </form>
+            
+    </section>
+
+</body>
+</html>

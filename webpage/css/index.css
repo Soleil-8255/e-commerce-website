@@ -1,0 +1,788 @@
+/* === Import Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Fredoka+One&family=Luckiest+Guy&family=Poppins:wght@300;400;600&family=Trade+Winds&family=Poetsen+One&family=Bungee+Tint&family=Knewave&display=swap');
+
+.name {
+    font-family: 'Bungee Tint', cursive;
+    font-size: 30px;
+}
+
+
+
+
+/* === Global Styles === */
+body { 
+    background: url('../bg.jpeg') no-repeat center/cover, #f8f8f8;
+    background-size: cover;  /* 让图片铺满整个屏幕 */
+    background-position: center; /* 居中对齐 */
+    background-repeat: no-repeat; /* 不重复 */
+    font-family: 'Baloo 2', "Comic Sans MS", cursive, sans-serif;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/* === Global Styles === */
+.brand-name{
+    font-family: "Trade Winds";
+}
+
+
+/* === Hero Section === */
+/* === hero超大图片 === */
+.hero-image {
+    width: calc(100% - 20px); /* 让它减少 padding 占用的空间 */
+    max-width: calc(100% - 20px);
+    height: auto;
+    display: block;
+    border-top: 10px solid #ac4176; /* 顶部粉色边框 */
+    border-bottom: 10px solid #ac4176; /* 底部粉色边框 */
+    padding: 10px; /* 增加一些内边距 */
+    background-color: #fffaf0; /* 给图片一个淡色背景，让它更柔和 */
+}
+.hero h2{
+    color: #fffaf0;
+    font-size: 45px;
+    text-shadow: 2px 2px 6px rgba(71, 12, 71, 0.8);
+}
+/* === hero超大图片 === */
+ 
+/* === Buttons === */
+.btn {
+    background:  #FFC107;
+    color: #333333;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: Algerian ;
+}
+
+.btn:hover {
+    background: #ff69b4;
+    transform: scale(1.1);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.label {
+    flex: 1; /* 让 New Arrivals 这个元素可伸缩 */
+    text-align: center; /* 让它居中 */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.see_more_btn {
+    background-color: #ff4081; /* 按钮颜色 */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.see_more_btn:hover {
+    background-color: #e73370;
+}
+
+
+.hero {
+    padding: 40px 0 0 0;
+    font-size: 20px;
+    margin-top: 0; /* 🚀 去掉 hero 顶部多余间距 */
+}
+.hero p{
+    color: #fffaf0;
+    text-shadow: 0 0 5px #470c47, 0 0 10px #5e055e;
+    font-size: 35px;
+
+}
+/* === Hero Section === */ 
+
+
+/* === Header 头上大标题 === */
+.main-header {
+    padding: 40px 0 0 0;
+    font-size: 28px;
+    color: black;
+    margin-bottom: -50px; /* 🚀 去掉 header 底部多余间距 */
+    text-align: center;
+    display: flex;
+    align-items: center; /* 让图标和文本垂直对齐 */
+    justify-content: center; /* 让整个标题居中 */
+    font-weight: bold;
+    text-shadow: 0 0 5px #f7eef7, 0 0 8px #fcf6fc;
+}
+/* === Header 头上大标题 === */
+
+ 
+
+
+
+/* === Fixed Navigation Bar === */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222;
+    display: flex;
+    justify-content: space-between; /* 保证 nav-container 里的内容居中 */
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000; 
+}
+.nav-container {
+    display: flex;
+    justify-content: center; /* 让导航项始终居中 */
+    flex-grow: 1;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 70px;
+}
+.navbar a {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.navbar a:hover {
+    background: #ff69b4;
+    color: #222;
+}
+/* === icon右左 === */
+.logoleft {
+    width: 50px; /* 但不能超过 60px */
+    height: auto;
+    margin-right: 10px; /* 给文本留些间距 */
+    position: absolute;
+    left: 50px; /* 固定在最右侧 */
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+
+}
+.search-bar {
+    position: absolute;
+    right: 120px; /* 让图标贴近输入框右边 */
+    top: 50%;
+    transform: translateY(-50%); /* 居中对齐 */
+    width: 40px;
+    height: 40px;
+    cursor: pointer; /* 让鼠标变成小手 */
+}
+.search-bar-log {
+    position: absolute;
+    right: 60px; /* 让图标贴近输入框右边 */
+    top: 50%;
+    transform: translateY(-50%); /* 居中对齐 */
+    width: 40px;
+    height: 40px;
+    cursor: pointer; /* 让鼠标变成小手 */
+}
+/* === icon右左 === */
+/* === Fixed Navigation Bar === */
+ 
+ 
+ 
+
+
+
+/* New Arrival--3 BIG TITLE */
+.label {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Knewave', 'Fredoka One', cursive; /* 搞怪风格字体 */
+    
+    color: transparent; /* 隐藏默认颜色，使渐变可见 */
+    text-shadow: 3px 3px 5px rgba(224, 83, 170, 0.651); /* 添加光晕阴影 */
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+   
+    color: #0f0f0de8;
+}
+/* 页面整体样式 */
+.product-section1 {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background:linear-gradient(to right, #d8e179, #edf1b9,#ccd4ae);
+    border-radius: 15px;  
+}
+
+
+.product-section2 {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #6e66a3, #dfe0e9,#9e95d4);
+    border-radius: 15px;
+    
+}
+
+
+
+
+
+
+.product-info p, .product-info h2 {
+    line-height: 1.3;
+    margin: 5px 0;
+}
+
+.product-info p {
+    margin-bottom: 10px;  /* 让描述和价格靠近 */
+}
+
+.money {
+    margin-top: 0px;  /* 价格往上拉近描述 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-section3 {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(to right,#65cf8c,#b0dc9f, #97e194);
+    border-radius: 15px;
+}
+
+
+.products-container .product-info .money {
+    color: #e80376  ;  /* 亮粉色 */
+    font-size: 23px  ;
+    font-weight: bold  ;
+    font-family: "Poppins";
+}
+
+
+/* Special Offer整体布局 */
+.product-section {
+    text-align: center;
+    background: linear-gradient(to right, #ffccd5, #dfe0e9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 让所有商品横着排列 */
+.products-container1 {
+    display: flex;
+    align-items: center;  /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    gap: 20px; /* 间距 */
+    flex-wrap: wrap; /* 如果屏幕太小就换行 */
+}
+
+/* 每个产品 */
+.product1 {
+    text-align: center;
+}
+
+/* 图片大小 */
+.product1 img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 加号、等号 */
+.symbol {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #a30137;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+/* 价格部分 */
+.special-price {
+    text-align: center;
+    background: linear-gradient(to right, #ffccd5, #dfe0e9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     
+}
+    
+
+
+.money {
+    font-size: 30px;
+    font-weight: bold;
+    color: #98024d;
+    margin: 0; /* 移除默认边距 */
+}
+
+.add-to-cart {
+    background: #b22841;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.add-to-cart:hover {
+    background: #E04D75;
+}
+
+
+
+.review-container {
+    background: #eccad6; /* 浅粉背景，和整体配色协调 */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    width: 1050px;
+    display: flex;
+    flex-direction: column; /* 让评论纵向排列 */
+    gap: 20px; /* 评论之间留空 */
+    margin: auto; /* 居中 */
+    margin-bottom: 50px;
+}
+
+
+
+.review {
+    display: flex;
+    align-items: center; /* 让头像和评论对齐 */
+    background: linear-gradient(to right, #adb9d8, #dfe0e9); /* 左粉→右粉渐变 */
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #d92c82;  /* 左边加个粉色边框 */
+}
+
+.review-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 让头像变圆 */
+    object-fit: cover; /* 确保图片填充整个圆 */
+    margin-right: 15px;
+}
+
+.review-text {
+    font-size: 20px;
+    font-style: italic;
+    color: #ba2020db;
+}
+
+.review-author {
+    display: block;
+    font-weight: bold;
+    color: rgba(129, 9, 9, 0.997);
+    margin-top: 5px;
+    float: right;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+.voice-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: linear-gradient(to right, #071a4a, #dfe0e9);
+    text-shadow: 1px 1px 3px rgba(212, 175, 55, 0.5);
+    letter-spacing: 1px;
+    font-family: "Poetsen One";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 商品容器：左右排列 */
+.products-container {
+    display: flex;
+    gap: 2px;
+    justify-content: space-around;
+    flex-wrap: wrap; /* 保证在小屏幕上自动换行 */
+}
+
+/* 每个商品的卡片样式 */
+.product {
+    display: flex;
+    align-items: center;
+    background: rgb(252, 249, 249);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    gap: 12px;
+    transition: transform 0.3s ease-in-out;
+    
+      
+        flex-direction: column; /* 让图片和文字垂直排列 */
+        align-items: center;    /* 水平居中 */
+       
+   
+}
+
+/* 商品鼠标悬停时的轻微放大 */
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* 商品图片 */
+.product img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* 文字信息 */
+.product-info {
+    flex: 1;
+}
+
+.product-info h2 {
+    font-size: 25px;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #3b3636;
+}
+
+/* “加入购物车” 按钮 */
+.add-to-cart {
+    background-color: #FF5E8A;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #E04D75;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Product Sections === */
+
+
+/* ALL强调= */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+.highlight {
+    color: #eb54a0; /* 红色 */
+    font-weight: 900;
+    animation: blink 1s infinite;
+}
+
+
+
+
+.btn1 {
+    background: linear-gradient(45deg, #FF66B2, #FFDD57);
+    color: #333333;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: "Baloo 2", bold  ;
+}
+
+.btn1:hover {
+    background: #ff69b4;
+    transform: scale(1.1);
+}
+
+/* === Footer === */
+/* === Footer Layout === */
+
+/* 页脚整体样式 */
+footer {
+    background: #f8f8f8;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Quick Links 标题 */
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Quick Links */
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* ✅ 按钮居中 */
+    gap: 10px; /* ✅ 控制间距 */
+    margin-bottom: 20px;
+}
+.quick-links button {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px 20px; /* ✅ 适当增大按钮 */
+    border-radius: 20px;
+    font-size: 16px; /* ✅ 让按钮文字更清晰 */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/*新加的横线*/
+.footer-divider {
+    width: 80%;  /* 让横线不铺满整个页面 */
+    margin: 20px auto;  /* 上下留白，让它居中 */
+    border: none;
+    border-top: 1px solid #9b9898;  /* 颜色和 Apple 风格接近 */
+    opacity: 0.6;  /* 让线条稍微淡一点 */
+}
+
+
+/*新加的*/
+.quick-links button:hover {
+    background: #ddd;
+}
+.about-privacy {
+    text-align: left;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-privacy h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-privacy p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-privacy a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+.about-privacy a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer Grid (分栏) */
+.footer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    text-align: left; /* ✅ 确保所有列的文字左对齐 */
+    width: 80%; /* ✅ 限制宽度，避免太分散 */
+    margin: 0 auto; /* ✅ 居中对齐 */
+}
+.footer-column {
+    min-width: 150px;
+}
+.footer-column h4 {
+    font-size: 16px; /* ✅ 字号略大，提高可读性 */
+    color: #333;
+    margin-bottom: 8px;
+}
+.footer-column a {
+    display: block;
+    font-size: 13px; /* ✅ 让文字更清晰 */
+    color: #444; /* ✅ 提高对比度 */
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.footer-column a:hover {
+    color: #ff69b4;
+}
+
+/* Social Media Links */
+/* 社交媒体容器 */
+.social-media-container {
+    display: flex;
+    align-items: center; /* ✅ 让 "Contact Us" 和图标垂直居中 */
+    justify-content: center;
+    gap: 15px; /* 控制 "Contact Us" 与社交图标的间距 */
+    margin-bottom: 20px;
+}
+
+/* "Contact Us" 文字样式 */
+.contact-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 社交媒体链接容器 */
+.social-media-links {
+    display: flex;
+    align-items: center; /* ✅ 让图标和文字垂直对齐 */
+    gap: 15px; /* 控制各个社交平台之间的间距 */
+}
+
+/* 社交媒体链接 */
+.social-link {
+    display: flex;
+    align-items: center; /* ✅ 确保图标和文字在一行对齐 */
+    gap: 5px; /* 控制图标和文字之间的间距 */
+    text-decoration: none;
+    font-size: 16px;
+    color: #6b4ef0;
+    font-weight: bold;
+}
+
+/* 社交媒体图标 */
+.social-icon {
+    width: 24px; /* ✅ 统一图标大小 */
+    height: 24px;
+    transition: transform 0.3s ease; /* ✅ 鼠标悬停时动画 */
+}
+
+/* 悬停效果 */
+.social-link:hover .social-icon {
+    transform: scale(1.2); /* ✅ 鼠标悬停时放大 */
+}
+
+/* 悬停时让链接颜色变深 */
+.social-link:hover {
+    color: #ff69b4;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 免责声明 & 版权信息 */
+.disclaimer {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.copyright {
+    font-size: 14px;
+    color: #888;
+}

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Fredoka+One&family=Luckiest+Guy&family=Poppins:wght@300;400;600&family=Trade+Winds&family=Poetsen+One&family=Bungee+Tint&family=Knewave&display=swap');
+
+body {
+    background: url('../bg.jpeg') no-repeat center/cover, #f8f8f8;
+    font-family: 'Baloo 2', "Comic Sans MS", cursive, sans-serif;
+    color: #1a1919;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    margin-top: 40px;
+}
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: left;
+}
+.brand-name {
+    font-family: "Trade Winds";
+    color: #fd05c3d0;
+    text-shadow: 3px 3px 5px rgba(224, 83, 170, 0.651);
+    border-right: 2px solid #333;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.contact-info {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ec407a;
+}
+/* Contact Methods */
+.contact-method {
+    margin-bottom: 20px;
+}
+
+.contact-method h3 {
+    font-size: 24px;
+    color: #ec407a;
+    margin-bottom: 5px;
+}
+
+.contact-method p {
+    font-size: 20px;
+    color: #333;
+}
+
+.contact-method p strong {
+    color: #ec407a;
+}
+
+/* Inquiry Form */
+.inquiry-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1), 4px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+.inquiry-form h3 {
+    color: #e91e63;
+    text-align: center;
+    font-size: 28px;
+}
+.inquiry-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+.inquiry-form input,
+.inquiry-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.inquiry-form button {
+    background-color: #e91e63;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+.inquiry-form button:hover {
+    background-color: #d81b60;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .contact-method h3 {
+        font-size: 20px;
+    }
+}
+
+/* === Fixed Navigation Bar === */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222;
+    display: flex;
+    justify-content: space-between; /* 保证 nav-container 里的内容居中 */
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000; 
+}
+.nav-container {
+    display: flex;
+    justify-content: center; /* 让导航项始终居中 */
+    flex-grow: 1;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 70px;
+}
+.navbar a {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.navbar a:hover {
+    background: #ff69b4;
+    color: #222;
+}
+/* === icon === */
+.logoleft {
+    width: 50px; /* 但不能超过 60px */
+    height: auto;
+    margin-right: 10px; /* 给文本留些间距 */
+    position: absolute;
+    left: 50px; /* 固定在最右侧 */
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+}
+.search-bar {
+    position: absolute;
+    right: 120px; /* 让图标贴近输入框右边 */
+    top: 50%;
+    transform: translateY(-50%); /* 居中对齐 */
+    width: 40px;
+    height: 40px;
+    cursor: pointer; /* 让鼠标变成小手 */
+}
+.search-bar-log {
+    position: absolute;
+    right: 60px; /* 让图标贴近输入框右边 */
+    top: 50%;
+    transform: translateY(-50%); /* 居中对齐 */
+    width: 40px;
+    height: 40px;
+    cursor: pointer; /* 让鼠标变成小手 */
+}
+/* === icon === */
+/* === Fixed Navigation Bar === */
+

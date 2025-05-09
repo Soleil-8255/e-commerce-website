@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Fredoka+One&family=Luckiest+Guy&family=Poppins:wght@300;400;600&family=Trade+Winds&family=Poetsen+One&family=Bungee+Tint&family=Knewave&display=swap');
+
+body { 
+  background: url('../bg.jpeg') no-repeat center/cover, #f8f8f8;
+  font-family: 'Baloo 2', "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000; 
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 70px;
+}
+.navbar a {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none; 
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar a:hover {
+  background: #ff69b4;
+  color: #222;
+}
+.logoleft {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  position: absolute;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+}
+.search-bar {
+  position: absolute;
+  right: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.search-bar-log {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 60px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-details {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.main-image {
+  flex: 1.8;
+  min-width: 300px;
+  position: sticky;
+  top: 100px;
+}
+.main-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-left: 40px;
+  margin-top: 20px;
+  border: 5px solid #f7a7a8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.main-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+.product-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.price, .add-to-cart {
+  align-self: flex-end;
+}
+@media (max-width: 768px) {
+  .product-details {
+    flex-direction: column;
+  }
+  .main-image {
+    position: static;
+  }
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 80px;
+  font-family: 'Bungee Tint';
+  text-align: center;
+}
+.price {
+  text-align: right;
+  font-size: 2em;
+  font-weight: bold;
+  color: #98024d;
+  margin-bottom: 10px;
+}
+.description {
+  font-size: 16px;
+  color: #444343;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.add-to-cart {
+  background: #db3e9f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.add-to-cart:hover {
+  background: #E04D75;
+}
+.product-images img {
+  max-width: 100%;
+  border-radius: 8px;
+  min-width: 300px;
+  text-align: center;
+}
+.product-images img {
+  max-width: 100%;
+  border-radius: 8px;
+  width: 600px;
+  height: auto;
+}
+#product-detail {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  font-family: 'Poppins', sans-serif;
+}
+#product-detail h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #222;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-family: 'Bungee Tint', sans-serif;
+}
+#product-detail .price {
+  font-size: 2em;
+  font-weight: bold;
+  color: #98024d;
+  text-align: center;
+  margin: 10px 0;
+}
+#product-detail .product-description p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #222;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+#product-detail p strong {
+  font-weight: bold;
+  color: #db3e9f;
+}
+#product-detail p .highlight {
+  color: #ff6347;
+  font-weight: bold;
+}
+#product-detail p span.emoji {
+  font-size: 1.3em;
+}
+#product-detail .product-description ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #222;
+}
+#product-detail .product-description ul li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+#product-detail .product-description {
+  margin-bottom: 40px;
+}
+#product-detail ul {
+  text-align: left;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.review {
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  font-family: 'Baloo 2', cursive, sans-serif;
+}
+.review strong {
+  font-size: 20px;
+  color: #98024d;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+.review p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  font-family: 'Poppins', sans-serif;
+}
+.review:nth-child(odd) {
+  background-color: #fcebeb;
+}
+.review:nth-child(even){
+  background-color: #d3ced0;
+}
+/* Tab  */
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #b756b0;
+}
+
+.tab-label {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #cb9ab7;
+  border: 1px solid #b756b0;
+}
+
+.tab-label:hover {
+  background: #ff69b4;
+}
+
+
+input[name="tab"] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+
+#tab1:checked ~ .content #product-show,
+#tab2:checked ~ .content #product-detail,
+#tab3:checked ~ .content #product-comments {
+  display: block;
+}
+
+
+#tab1:checked ~ .tabs label[for="tab1"],
+#tab2:checked ~ .tabs label[for="tab2"],
+#tab3:checked ~ .tabs label[for="tab3"] {
+  background: rgb(236, 235, 235);
+  border-bottom: 2px solid #ff69b4;
+}
+
+
+
